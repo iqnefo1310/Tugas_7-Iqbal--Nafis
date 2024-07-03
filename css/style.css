@@ -7,7 +7,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #010511;
-    overflow-x: hidden;
 }
 
 main {
@@ -21,19 +20,23 @@ header {
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
-    padding: 50px;
+    padding: 100px 0;
     text-transform: uppercase;
 }
-header img{
+
+header img {
     opacity: 60%;
+    width: 100%;
+    height: auto;
 }
 
 header h1 {
     font-weight: 900;
     text-shadow: black 2px 2px 2px;
+    padding-bottom: 50px;
 }
 
-figure{
+figure {
     min-height: 100vh;
 }
 
@@ -65,7 +68,7 @@ figure{
     border-radius: 20px;
     overflow: hidden;
     display: grid;
-    grid-template-columns: repeat(8,1fr);
+    grid-template-columns: repeat(8, 1fr);
 }
 
 .col-2 figcaption {
@@ -104,13 +107,13 @@ button {
 
 @media (max-width:1030px) {
     .container {
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
-
+    
     h2 {
         font-size: 3vw;
     }
-
+    
     p {
         font-size: 2vw;
     }
@@ -118,9 +121,9 @@ button {
 
 @media (max-width:700px) {
     .container {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-
+    
     h2 {
         font-size: 5vw;
     }
