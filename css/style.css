@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3vw;
     background-color: #010511;
 }
 
@@ -95,6 +98,7 @@ footer {
     position: relative;
     bottom: 0;
     padding: 10px;
+    font-size: 2vw;
 }
 
 button {
@@ -105,17 +109,20 @@ button {
     text-transform: capitalize;
 }
 
-@media (max-width:1030px) {
+@media (max-width:1050px) {
     .container {
         grid-template-columns: repeat(4, 1fr);
     }
-    
+
     h2 {
         font-size: 3vw;
     }
-    
+
     p {
         font-size: 2vw;
+    }
+    header {
+        padding: 50px 0;
     }
 }
 
@@ -123,12 +130,15 @@ button {
     .container {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     h2 {
         font-size: 5vw;
     }
 
     p {
         font-size: 3vw;
+    }
+    header {
+        padding: 5px 0;
     }
 }
