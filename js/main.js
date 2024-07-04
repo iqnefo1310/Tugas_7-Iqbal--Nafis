@@ -254,11 +254,13 @@ function Products(data) {
         });
         like.addEventListener("click", () => {
             alert("Anda Menyukai Product");
-            console.log("like")
+            console.log("like");
         });
         coment.addEventListener("click", () => {
-            let komen = prompt("Tulis Komentar Anda")
-            console.log("komentar: " + komen);
+            let komen = prompt("Tulis Komentar Anda");
+            if (komen) {   
+                console.log("komentar: " + komen);
+            }
         });
 
         // col-2 appendChild
@@ -275,10 +277,11 @@ function Products(data) {
         // // style dom untuk tombol
         let tombol = document.getElementsByTagName('button');
         for (let index = 0; index < tombol.length; index++) {
-            const element = tombol[index];
+            let element = tombol[index];
             element.style.backgroundColor='#f00';
             element.style.color='#fff';
-        }
+        };
     });
-}
+};
+
 Products(dataBase);
